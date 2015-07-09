@@ -26,7 +26,7 @@ defmodule Maildir do
   end
 
 
-  def folder_listing(path, info_filter \\ "") do
+  def folder_messages(path, info_filter \\ "") do
     if is_maildir_structure?(path) do
       # Cleanup tmp files
       cleanup_folder!(path)
@@ -49,8 +49,8 @@ defmodule Maildir do
   end
 
 
-  def paged(listing, items_per_page \\ 10, page \\ 0) do
-    Enum.slice(listing, page * items_per_page, items_per_page)
+  def paged(msgs, items_per_page \\ 10, page \\ 0) do
+    Enum.slice(msgs, page * items_per_page, items_per_page)
       |> Enum.map &message/1
   end
 
