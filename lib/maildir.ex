@@ -7,6 +7,12 @@ defmodule Maildir do
   @info "2" <> @info_separator # the default info
 
 
+  defmacro __using__(_) do
+    quote do
+      alias MailParse
+    end
+  end
+
   # Maildir contains three sub-directories, new, cur and tmp.
   def is_maildir_structure?(path) do
     path |> File.dir? &&
