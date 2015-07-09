@@ -1,0 +1,115 @@
+Return-Path: <dejan@cityprize.ch>
+Delivered-To: mjb@migadu.ch
+Received: from mail-wi0-f172.google.com (mail-wi0-f172.google.com [209.85.212.172])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mail.migadu.ch (Postfix) with ESMTPS id 16B64C1658
+	for <mjb@migadu.ch>; Mon, 22 Jun 2015 13:43:44 -0400 (EDT)
+Authentication-Results: mail.migadu.ch; dkim=pass
+	reason="1024-bit key; unprotected key"
+	header.d=cityprize.ch header.i=@cityprize.ch header.b=bQl8mIxj;
+	dkim-adsp=pass; dkim-atps=neutral
+Received: by wicnd19 with SMTP id nd19so83681605wic.1
+        for <mjb@migadu.ch>; Mon, 22 Jun 2015 10:43:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=cityprize.ch; s=google;
+        h=sender:from:content-type:subject:message-id:date:to:mime-version;
+        bh=oiSYTLO7Ts11d5toHk4z0MtfQgnhYu6J9uMpyffROFU=;
+        b=bQl8mIxjfEiBvOtp840hR30yNFHUntDvBpPdCaVEYZ45NoIvpfbl7AH4i5x5wrOUKD
+         xsCxpR9QeQ09RpOcVZBtJ4njPEcN5XerdHHK11Fe1YKcsZtdpbUDNvoMjO1SAmoOJfpU
+         CQtft5e6VttzRcLMvW4cKoxTs49agtWs0iRcA=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=advite.ch; s=google;
+        h=sender:from:content-type:subject:message-id:date:to:mime-version;
+        bh=oiSYTLO7Ts11d5toHk4z0MtfQgnhYu6J9uMpyffROFU=;
+        b=idXkwaFosR0SHuORK1aimhWExFUfxZtC4LTDxD/4FGWB3aqO+0NhZyexTKIpxw/ikD
+         xtD6EZeHbTjHcsB6xdQyj3ROZBKKo6/5J+c9fAlSPh6TYee+3WkFlLt5sWpTRhsBn6hG
+         ZilPDJCNR886Ui21BZvFpfi9w2b9J2E/JO5ho=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:sender:from:content-type:subject:message-id:date
+         :to:mime-version;
+        bh=oiSYTLO7Ts11d5toHk4z0MtfQgnhYu6J9uMpyffROFU=;
+        b=lQuDmFhVDXHeX7KV/oP/+Sw0l1PgFSjkIHu7vAIuUBBX28WPSBEM+JEF0ZiCjl0LVH
+         wH4fMsv+ATqgOLmwCfWcCyOob8cN80I9UPRcWYFOiJ08gBCoPBCffPogwQzzPVRJ7aNU
+         0POQzLO59pmBuvK6bJEiZuRS5vaREjgRQnGb6uf7ZPKAsp4wklbEdkalITF50gBNX6eQ
+         z6Xw8YhYkOFknzr+HIUfF+VIaCg8Rn7IxRm7zco5NchxwvN+pdGaetpsYNiIfXrMxCNN
+         r9nCEmSJWxF5NXEZU+UoMLFToXFRJ1PihRuu0Iq4cl/MChqDmV7DPQwNCbCyBZipQCno
+         zG3Q==
+X-Gm-Message-State: ALoCoQkWPLv9U5HZwjCKjcEAS4/bEu1WUmTvXMfuMAidwFwHku7coNFkrWeMgn/Ss6auUNVuk2vE
+X-Received: by 10.194.185.106 with SMTP id fb10mr44036478wjc.84.1434995017865;
+        Mon, 22 Jun 2015 10:43:37 -0700 (PDT)
+Received: from [192.168.0.7] (46-127-193-89.dynamic.hispeed.ch. [46.127.193.89])
+        by mx.google.com with ESMTPSA id v3sm18319830wiz.14.2015.06.22.10.43.36
+        for <mjb@migadu.ch>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Mon, 22 Jun 2015 10:43:37 -0700 (PDT)
+Sender: "Strbac, Dejan" <dejan@cityprize.ch>
+From: Dejan Strbac <dejan@advite.ch>
+Content-Type: multipart/signed; boundary="Apple-Mail=_C2B2D764-B5AC-4717-A124-5D60BFAF3083"; protocol="application/pkcs7-signature"; micalg=sha1
+Subject: Test new
+Message-Id: <976BCD13-D2DC-4B4D-B44D-97B68E1A4700@advite.ch>
+Date: Mon, 22 Jun 2015 19:43:32 +0200
+To: "Michael J. Bruderer" <mjb@migadu.ch>
+Mime-Version: 1.0 (Mac OS X Mail 8.2 \(2098\))
+X-Mailer: Apple Mail (2.2098)
+
+
+--Apple-Mail=_C2B2D764-B5AC-4717-A124-5D60BFAF3083
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain;
+	charset=us-ascii
+
+Hello
+--Apple-Mail=_C2B2D764-B5AC-4717-A124-5D60BFAF3083
+Content-Disposition: attachment;
+	filename=smime.p7s
+Content-Type: application/pkcs7-signature;
+	name=smime.p7s
+Content-Transfer-Encoding: base64
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExCzAJBgUrDgMCGgUAMIAGCSqGSIb3DQEHAQAAoIIGHzCCBhsw
+ggUDoAMCAQICAw1rwjANBgkqhkiG9w0BAQUFADCBjDELMAkGA1UEBhMCSUwxFjAUBgNVBAoTDVN0
+YXJ0Q29tIEx0ZC4xKzApBgNVBAsTIlNlY3VyZSBEaWdpdGFsIENlcnRpZmljYXRlIFNpZ25pbmcx
+ODA2BgNVBAMTL1N0YXJ0Q29tIENsYXNzIDEgUHJpbWFyeSBJbnRlcm1lZGlhdGUgQ2xpZW50IENB
+MB4XDTE1MDMyMjA0MjAxNFoXDTE2MDMyMjExMDQwN1owOjEYMBYGA1UEAwwPZGVqYW5AYWR2aXRl
+LmNoMR4wHAYJKoZIhvcNAQkBFg9kZWphbkBhZHZpdGUuY2gwggEiMA0GCSqGSIb3DQEBAQUAA4IB
+DwAwggEKAoIBAQC1yg17xtj1EgucZzdyxsSnWaHtzBs5UWbvtlBJGUbYP2/nLcyt7sERn8UG7xUc
+fHvaXzVlPkvsiS2G4QRv7d/CHkIXzcaaTwN9AImhsH/egEUvPl2EALdXJXYLROL7EHzARlAvLkrI
+khXSxSXhNcXJ5JqdWz49Uk0OhSpgIBV6PcaOfGTLqMCKjN9X//ACIjCBasXuEHEsgQNcLSsPwTmY
+4pbHinqy+ttz5xRmsUZHZbZKraa9HZkH87Sdj62cB7DcIV4sN9tFA77FEWTfLJOBAw+vsptP+J9R
+jaESdIFIvTC6TIkGKQy6nzf9pZ+eaM4Qeeh8+QooC5DkVoz4KH+bAgMBAAGjggLVMIIC0TAJBgNV
+HRMEAjAAMAsGA1UdDwQEAwIEsDAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwQwHQYDVR0O
+BBYEFBCElsN64t6sexbZqJpomjkuVXQhMB8GA1UdIwQYMBaAFFNy7ZKc4NrLAVx8fpY1TvLUuFGC
+MBoGA1UdEQQTMBGBD2RlamFuQGFkdml0ZS5jaDCCAUwGA1UdIASCAUMwggE/MIIBOwYLKwYBBAGB
+tTcBAgMwggEqMC4GCCsGAQUFBwIBFiJodHRwOi8vd3d3LnN0YXJ0c3NsLmNvbS9wb2xpY3kucGRm
+MIH3BggrBgEFBQcCAjCB6jAnFiBTdGFydENvbSBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTADAgEB
+GoG+VGhpcyBjZXJ0aWZpY2F0ZSB3YXMgaXNzdWVkIGFjY29yZGluZyB0byB0aGUgQ2xhc3MgMSBW
+YWxpZGF0aW9uIHJlcXVpcmVtZW50cyBvZiB0aGUgU3RhcnRDb20gQ0EgcG9saWN5LCByZWxpYW5j
+ZSBvbmx5IGZvciB0aGUgaW50ZW5kZWQgcHVycG9zZSBpbiBjb21wbGlhbmNlIG9mIHRoZSByZWx5
+aW5nIHBhcnR5IG9ibGlnYXRpb25zLjA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vY3JsLnN0YXJ0
+c3NsLmNvbS9jcnR1MS1jcmwuY3JsMIGOBggrBgEFBQcBAQSBgTB/MDkGCCsGAQUFBzABhi1odHRw
+Oi8vb2NzcC5zdGFydHNzbC5jb20vc3ViL2NsYXNzMS9jbGllbnQvY2EwQgYIKwYBBQUHMAKGNmh0
+dHA6Ly9haWEuc3RhcnRzc2wuY29tL2NlcnRzL3N1Yi5jbGFzczEuY2xpZW50LmNhLmNydDAjBgNV
+HRIEHDAahhhodHRwOi8vd3d3LnN0YXJ0c3NsLmNvbS8wDQYJKoZIhvcNAQEFBQADggEBAHcwIrp4
+6/Zcghc3rvHa2GeZHcC6Y3hybrVU0veakGv22/ggs2yGYtZygtYBwj2nVdzAWVL/Szqg9F8MDA8N
+VPE2eMBZDJoodC3eZRLTx0tlMWhm4zbiosLVIPefffl2BYA4YJS4VlGFJB1X9F620WU9Arcaj8hn
+CLFckl2ltkm3UvfAe9tsNa1PXU25o1lZzfsUZvS8DvvOt0MZWgPLyO9I+E5znWeG1+CWVCfQv7fl
+81U8RtnhywpBhaGT6bXWt0dmvQ0t/t0DYYeT1t59iMHRngrwX3ZjnzIl/zvWm+lBgRKHJCD5RGno
+keKHr/OcBaNAsAq3GnmxVvuCj3YO1m0xggNvMIIDawIBATCBlDCBjDELMAkGA1UEBhMCSUwxFjAU
+BgNVBAoTDVN0YXJ0Q29tIEx0ZC4xKzApBgNVBAsTIlNlY3VyZSBEaWdpdGFsIENlcnRpZmljYXRl
+IFNpZ25pbmcxODA2BgNVBAMTL1N0YXJ0Q29tIENsYXNzIDEgUHJpbWFyeSBJbnRlcm1lZGlhdGUg
+Q2xpZW50IENBAgMNa8IwCQYFKw4DAhoFAKCCAa8wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAc
+BgkqhkiG9w0BCQUxDxcNMTUwNjIyMTc0MzMzWjAjBgkqhkiG9w0BCQQxFgQU2g/eYBp9vhtBecBd
+/npab9OdgYYwgaUGCSsGAQQBgjcQBDGBlzCBlDCBjDELMAkGA1UEBhMCSUwxFjAUBgNVBAoTDVN0
+YXJ0Q29tIEx0ZC4xKzApBgNVBAsTIlNlY3VyZSBEaWdpdGFsIENlcnRpZmljYXRlIFNpZ25pbmcx
+ODA2BgNVBAMTL1N0YXJ0Q29tIENsYXNzIDEgUHJpbWFyeSBJbnRlcm1lZGlhdGUgQ2xpZW50IENB
+AgMNa8IwgacGCyqGSIb3DQEJEAILMYGXoIGUMIGMMQswCQYDVQQGEwJJTDEWMBQGA1UEChMNU3Rh
+cnRDb20gTHRkLjErMCkGA1UECxMiU2VjdXJlIERpZ2l0YWwgQ2VydGlmaWNhdGUgU2lnbmluZzE4
+MDYGA1UEAxMvU3RhcnRDb20gQ2xhc3MgMSBQcmltYXJ5IEludGVybWVkaWF0ZSBDbGllbnQgQ0EC
+Aw1rwjANBgkqhkiG9w0BAQEFAASCAQBHNU/A4K53XR8yzMetIqvTMYLIhmRL32lrpTS0W8k9vNFE
+xPWusIkxUiYn+eCNGhwGQCqHLIggEzDn9+ksjAe/pTW9rycxb/FCfuGg5Ti0+sJ4b4uG4dFq6vo5
+BP+TpIJPShCShecuZ5NSwhbq+JVV5AnKPVK2tTQ+6VK3kTLtxIFW9eN17MviQIMqD41IaBNCsjMh
+BBvhyQhR7PhQFYre0rewaB3/JspEbMv8cj4b+LsXHn30vGwoLxgqnvJFIHoB70O4GxwQDBq8cPBS
+IUDDtCPW/Lhmh/7zzpXadNi9rRil0pmBujnOgsbjIDA+UzqX/uAxsqNUfvzXUCakRtzeAAAAAAAA
+--Apple-Mail=_C2B2D764-B5AC-4717-A124-5D60BFAF3083--

@@ -1,0 +1,4 @@
+Maildir
+=======
+
+** TODO: Add description **

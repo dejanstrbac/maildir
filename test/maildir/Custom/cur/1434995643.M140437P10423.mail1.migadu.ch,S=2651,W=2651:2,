@@ -1,0 +1,50 @@
+Return-Path: <michael@cityprize.ch>
+Delivered-To: mjb@migadu.ch
+Received: from mail-wg0-f51.google.com (mail-wg0-f51.google.com [74.125.82.51])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mail.migadu.ch (Postfix) with ESMTPS id 88497C17C7
+	for <mjb@migadu.ch>; Mon, 22 Jun 2015 13:48:13 -0400 (EDT)
+Authentication-Results: mail.migadu.ch; dkim=pass
+	reason="1024-bit key; unprotected key"
+	header.d=cityprize.ch header.i=@cityprize.ch header.b=wiEId4Qe;
+	dkim-adsp=pass; dkim-atps=neutral
+Received: by wguu7 with SMTP id u7so75783345wgu.3
+        for <mjb@migadu.ch>; Mon, 22 Jun 2015 10:48:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=cityprize.ch; s=google;
+        h=date:from:to:message-id:mime-version:content-type
+         :content-disposition:user-agent;
+        bh=hcuOIFdpMpieqbcOlUhBEq2qKnALLybkHtIKGIrBbS8=;
+        b=wiEId4QexaSwNwooxjzak9RXhkIp7cNYwU1v82PTI/xma1AxOW6zrLtZSTVQdlblqH
+         G1g5H728QoTuMaUDWKnceoEqNXeWAKiYRPu7WJguCp1n8bqEmr0WqgCggF/6UNEU9Tkh
+         8wwDbc2uGgTCiYpjdoYeZVzeE5ULBeE3PDKzw=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:date:from:to:message-id:mime-version
+         :content-type:content-disposition:user-agent;
+        bh=hcuOIFdpMpieqbcOlUhBEq2qKnALLybkHtIKGIrBbS8=;
+        b=QWut3SDaWrZ8n8u37j2dvlosmR2zFiZiCJNqKxyOFSmuOh89MYjgtpuwJgx+ULBkLh
+         ARm01anTcI26EjzCH+CB2lGAEzaVxnjiSxsLwFyMzlb24eQkSejypF5oGLaD/DGDOUE5
+         Z4l/9LofbQx1aRW0xDL5fXjGQsKApLaV4zdP6TH55Ul9+REVhJkQPsY2WnX4u7t3bRYp
+         XvBPM39bW4AT7dkdjKJwvqvQkLjZSrYpirSSd4QbENY8GipqSQjpbhVNyUJyoGE1XK92
+         0ylkOivfgDG2Pq297IjbZT8vzKqiQViCL8LX2Vdeb5oGz92VafgkVSRFWPMqflL1Cf4U
+         sXdg==
+X-Gm-Message-State: ALoCoQng5dUr9imaVJtXNAFSxfSTO86JLDTTsPm2Xu3igznB6q0H2t1FM5MLpqbixuCjene8oiNm
+X-Received: by 10.195.13.113 with SMTP id ex17mr52466051wjd.17.1434995286122;
+        Mon, 22 Jun 2015 10:48:06 -0700 (PDT)
+Received: from localhost (212.9.150.83.ftth.as8758.net. [83.150.9.212])
+        by mx.google.com with ESMTPSA id ka7sm31659536wjc.36.2015.06.22.10.48.04
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 22 Jun 2015 10:48:05 -0700 (PDT)
+Date: Mon, 22 Jun 2015 19:48:03 +0200
+From: "Michael J. Bruderer" <michael@cityprize.ch>
+To: mjb@migadu.ch
+Message-ID: <20150622174803.GB11016@localhost>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23+89 (0255b37be491) (2014-03-12)
+
+csd
+

@@ -1,0 +1,5 @@
+%{"eiconv": {:git, "git://github.com/zotonic/eiconv.git", "644fb5e7bd6640fbd073f4d28957914ea979aea0", []},
+  "gen_smtp": {:hex, :gen_smtp, "0.9.0"},
+  "mailparse": {:git, "git://github.com/dejanstrbac/mailparse.git", "d225106c3eec3a6f3efbb329c40c3b0e0dcf9d28", []},
+  "timex": {:hex, :timex, "0.14.3"},
+  "tzdata": {:hex, :tzdata, "0.1.6"}}
