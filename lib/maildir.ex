@@ -117,14 +117,7 @@ defmodule Maildir do
 
   def message(path) do
     { :ok, parsed_mail } = MailReader.read(path)
-    { :ok, received_at } = DateFormat.parse(parsed_mail.date, "{RFC1123z}")
-
-    %{
-      subject: Map.get(parsed_mail, :subject, "(No Subject)"),
-      from:    parsed_mail.from,
-      date:    DateFormat.format!(received_at, "{ISO}"),
-      raw:     parsed_mail
-     }
+    parsed_mail
   end
 
 
